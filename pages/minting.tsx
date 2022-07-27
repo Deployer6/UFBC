@@ -40,6 +40,7 @@ const Minting: NextPage = () => {
         type: "SMART_CONTRACT_EXECUTION",
         from: account,
         to: MINT_NFT_ADDRESS,
+        //value: caver?.utils.convertToPeb(20, "KLAY"),
         gas: 3000000,
         data: mintNFTContract?.methods.mintNFT().encodeABI(),
       });
@@ -90,8 +91,8 @@ const Minting: NextPage = () => {
           <Image
             src={
               colorMode === "light"
-                ? "../images/kaikas-white.png"
-                : "../images/kaikas.png"
+                ? "../images/notReveal.gif"
+                : "../images/notReveal.gif"
             }
             w={8}
             mr={2}
