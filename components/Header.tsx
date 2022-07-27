@@ -12,6 +12,8 @@ const logoImageDark = "logo_white.png";
 const openseaURL = "https://opensea.io/collection/ufbc-v1";
 const discordURL = "https://discord.gg/JV4whBWNPs";
 const instagramURL = "https://www.instagram.com/projectlion.io/";
+const mintingURL = "https://www.ufbc.xyz/minting";
+const whitePaperURL = "https://ufdc.gitbook.io/readme/overview/introduction";
 
 const Header: FC = () => {
   const scrollLink = ["Story", "Roadmap", "Team"];
@@ -57,6 +59,19 @@ const Header: FC = () => {
         })}
       </Box>
       <Flex alignItems="center" my={[4, 4, 0]}>
+        
+        <Link href={whitePaperURL}>
+          <Button colorScheme="blue">
+              WhitePaper
+          </Button>
+        </Link>
+
+        <Link href={mintingURL}>
+          <Button colorScheme="green">
+              Minting
+          </Button>
+        </Link>
+
         <Link href={openseaURL}>
           <Button variant="ghost" size={["xs", "xs", "sm"]}>
             <Image src="../images/opensea.png" alt="opensea" w={6} />
