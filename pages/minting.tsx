@@ -136,7 +136,7 @@ const Minting: NextPage = () => {
           )}
         </Flex>
         <Flex ml={8} direction="column" minH={512} minW={300}>
-          <Text>Price : 0 Klay</Text>
+          <Text>Price : 20 Klay</Text>
           <Button
             size="lg"
             colorScheme="green"
