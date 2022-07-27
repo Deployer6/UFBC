@@ -91,8 +91,8 @@ const Minting: NextPage = () => {
           <Image
             src={
               colorMode === "light"
-                ? "../images/notReveal.gif"
-                : "../images/notReveal.gif"
+                ? "../images/kaikas-white.png"
+                : "../images/kaikas.png"
             }
             w={8}
             mr={2}
@@ -124,12 +124,12 @@ const Minting: NextPage = () => {
             <Image
               src={newNFT.image}
               borderRadius="lg"
-              fallbackSrc="../images/loading.png"
+              fallbackSrc="../images/notReveal.gif"
               alt="nft"
             />
           ) : (
             <Image
-              src="../images/loading.png"
+              src="../images/notReveal.gif"
               borderRadius="lg"
               alt="loading"
             />
